@@ -1,0 +1,395 @@
+@charset 'utf-8';
+#header{
+    min-width:1230px;
+    height:200px;
+}
+/******header-nav start*******/
+#header .header-nav{
+    height:35px;
+    background-color:#f2f2f2;
+    border-bottom: 1px solid #e5e5e5;
+    z-index:2;
+}
+#header  .header-nav-container{
+    width:1230px;
+    margin:auto;
+}
+/******header-nav-left start*******/
+#header .header-nav-container .header-nav-left{
+    width:220px;
+    line-height: 35px;
+    color:#a9a9a9;
+}
+#header .header-nav .header-nav-container .header-nav-left em{
+    font-style:normal;
+    font-size:12px;
+
+}
+#header .header-nav .header-nav-container .header-nav-left a{
+    margin-left:20px;
+}
+#header .header-nav .header-nav-container .header-nav-left a:hover{
+    color:#ff0036;
+}
+/******header-nav-left end*******/
+/******header-nav-right start*******/
+#header .header-nav .header-nav-container .header-nav-right{
+    width:550px;
+    height:35px;
+    color:#a1a1a1;
+}
+#header .header-nav-right .mytaobao{
+    width:72px;
+    line-height:35px;
+    text-align:center;
+}
+#header .header-nav-right .mytaobao>a{
+    display: block;
+    height:100%;
+    line-height:35px;
+}
+#header  .header-nav-right .on>a:after{
+    content:'';
+    position: absolute;
+    top:0;
+    bottom:0;
+    width:0;
+    height:0;
+    margin:auto;
+    margin-left:3px;
+    border-style: solid;
+    border-width: 3px;
+    border-bottom: none;
+    border-color:#bbb transparent transparent;
+    transition: .3s;
+}
+#header  .header-nav-right .on:hover>a:after{
+    transform:rotate(180deg);
+}
+#header .header-nav-right .mytaobao>a:hover{
+    text-decoration: underline;
+}
+#header .header-nav-right .mytaobao:hover{
+    background-color: #fff;
+}
+#header  .header-nav-right .mytaobao:hover>a{
+    color:#ff0036;
+}
+#header  .header-nav-right  .mytaobao ul{
+    display: none;
+    width:75px;
+    height:40px;
+    padding:10px;
+    background-color: #fff;
+}
+#header  .header-nav-right  .mytaobao ul li{
+    line-height:20px;
+}
+#header  .header-nav-right .mytaobao  ul li a:hover{
+    color:#ff0036;
+    text-decoration: underline;
+}
+#header  .header-nav-right .mytaobao:hover ul{
+    display: block;
+}
+#header  .header-nav-right .shopcar{
+    width:80px;
+    line-height:35px;
+    margin-left: 5px;
+}
+#header  .header-nav-right .shopcar i{
+    color:#ff0036;
+}
+#header  .header-nav-right .shopcar>a>span{
+    color:#767676;
+    font-weight: 600;
+}
+#header  .header-nav-right .shopcar:hover>a,#header .header-nav-right .shopcar:hover>a>span{
+    color:#ff0036;
+}
+#header  .header-nav-right .favorite{
+    width:60px;
+    line-height:35px;
+    margin-left:5px;
+}
+#header  .header-nav-right .favorite:hover{
+    background-color:#fff;
+}
+#header  .header-nav-right .favorite>a{
+    display:block;
+    width:60px;
+    text-indent: 12px;
+}
+#header .favorite .hide{
+    display: none;
+    width:64px;
+    height:40px;
+    padding:10px;
+    background-color: #fff;
+}
+#header .favorite .hide li{
+    line-height:20px;
+}
+#header  .header-nav-right .favorite:hover .hide{
+    display:block;
+}
+#header  .header-nav-right .favorite:hover>a{
+    color:#ff0036;
+}
+#header  .header-nav-right .favorite>a:hover{
+    text-decoration: underline;
+}
+#header  .header-nav-right .favorite .hide a:hover{
+    color:#ff0036;
+    text-decoration: underline;
+}
+#header  .header-nav-right .mobile{
+    width:70px;
+    line-height:35px;
+    margin-left: 5px;
+}
+#header  .header-nav-right .mobile i{
+    padding-left: 10px;
+    border-left: 1px solid #ccc;
+    vertical-align: middle;
+    color: #ff0036;
+}
+#header  .header-nav-right .mobile:hover a{
+    color:#ff0036;
+}
+#header  .header-nav-right .mobile img{
+    display:none;
+    position: absolute;
+    left: -35px;
+    top:32px;
+    width: 175px;
+    height:227px;
+    box-shadow: 0 0 5px 0;
+}
+#header  .header-nav-right .mobile:after{
+    display:none;
+    content:'';
+    position: absolute;
+    left:42px;
+    top:26px;
+    width:0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px;
+    border-color:#FFF transparent;
+    border-top: none;
+}
+#header  .header-nav-right .mobile:hover img,#header  .header-nav-right .mobile:hover:after{
+    display: block;
+}
+#header  .header-nav-right .taobao-site{
+    width: 50px;
+    height: 100%;
+    line-height: 35px;
+    margin-left: 5px;
+    text-align: center;
+}
+#header  .header-nav-right .taobao-site:hover a{
+    color:#ff0036;
+}
+#header  .header-nav-right .business-support{
+    width:80px;
+    height:100%;
+    line-height: 35px;
+    margin-left:10px;
+}
+#header  .header-nav-right .business-support:hover{
+    background-color:#fff;
+}
+#header   .business-support>a{
+    display:block;
+    height:100%;
+    text-align: center;
+}
+#header  .header-nav-right .business-support:hover>a{
+    color:#ff0036;
+}
+#header   .business-support>a:hover{
+    text-decoration: underline;
+}
+#header   .business-support .hide{
+    display:none;
+    position:absolute;
+    left:-70px;
+    width:126px;
+    height:180px;
+    background-color:#fff;
+    padding:0 12px;
+}
+#header   .business-support:hover .hide{
+    display:block;
+}
+#header  .business-support .hide h4{
+    line-height: 23px;
+}
+#header .business-support .hide ul{
+    line-height: 23px;
+    border-bottom: 1px dotted #827777;
+}
+#header .business-support .hide ul li{
+    display:inline-block;
+}
+#header .business-support .hide ul li:nth-child(even){
+    margin-left:20px;
+}
+#header .business-support .hide ul li a:hover{
+    color:#ff0036;
+    text-decoration:underline;
+}
+#header .header-nav-right .site-nav{
+    width:90px;
+    height:100%;
+    line-height:35px;
+    margin-left:5px;
+}
+#header .header-nav-right .site-nav:hover{
+    background-color: #fff;
+}
+#header .header-nav-right .site-nav i{
+    color:#ff0036;
+    margin-left: 8px;
+    vertical-align:middle;
+}
+#header  .site-nav .hide{
+    display:none;
+    left:-1110px;
+    width:1200px;
+    height: 160px;
+    background-color:#fff;
+}
+#header  .site-nav:hover .hide{
+    display: block;
+}
+#header  .site-nav .hide .hot{
+    width:460px;
+    height:120px;
+    margin:21px 0;
+    padding-left:30px;
+    border-right: 1px solid #f5f5f5;
+}
+#header  .site-nav .hide .hot h4{
+    line-height: 42px;
+    color:#f56a00;
+    font-size:18px;
+    font-weight: normal;
+}
+#header  .site-nav .hide .hot ul li{
+    float: left;
+    width:50px;
+    line-height:28px;
+    margin-right:42px;
+}
+#header  .site-nav .hide .market{
+    width:457px;
+    height:120px;
+    margin:21px 0;
+    padding-left:30px;
+    border-right: 1px solid #f5f5f5;
+}
+#header  .site-nav .hide .market h4{
+    line-height: 42px;
+    color:#2263d4;
+    font-size:18px;
+    font-weight: normal;
+}
+#header  .site-nav .hide .market ul li{
+    float: left;
+    width:25px;
+    line-height:28px;
+    margin-right:66px;
+}
+#header  .site-nav .hide .help{
+    width:190px;
+    height:120px;
+    margin:21px 0;
+    padding-left:30px;
+}
+#header  .site-nav .hide .help h4{
+    line-height: 42px;
+    color:#666;
+    font-size:18px;
+    font-weight: normal;
+}
+#header  .site-nav .hide .help ul li{
+    float: left;
+    width:60px;
+    line-height:28px;
+    margin-right:35px;
+}
+#header  .site-nav .hide a:hover{
+    color:#ff0036;
+    text-decoration:underline;
+}
+/******header-nav-right end*******/
+/******header-nav end*******/
+/******header-container start*******/
+#header .header-container{
+    height:130px;
+}
+#header .header-container .header-container-content{
+    width:1230px;
+    height:100%;
+    margin:auto;
+}
+#header .header-container-content h1{
+    width:290px;
+    height:100%;
+    margin-left:-40px;
+}
+#header .header-container-content .search{
+    width:630px;
+    height:100%;
+    margin-left:100px;
+}
+#header .header-container-content .search form{
+    line-height:46px;
+    margin-top:45px;
+}
+#header .header-container-content .search input[type=text]{
+    width:490px;
+    height:40px;
+    border:3px solid #ff0036;
+    font-size:16px;
+    text-indent:5px;
+    vertical-align:middle;
+    
+}
+#header .header-container-content .search input[type=text]:focus::-webkit-input-placeholder{  /*设置placehoder中字体的颜色*/
+    color:#ccc;
+}
+#header .header-container-content .search form input[type=submit]{
+    width:130px;
+    height:48px;
+    margin-left:-5px;
+    background-color:#ff0036;
+    border:none;
+    outline: none;
+    color:#FFF;
+    font-size:18px;
+    font-weight: 600;
+    vertical-align:middle;
+    letter-spacing:5px;
+}
+#header .header-container-content .search form input[type=submit]:hover{
+    cursor:pointer;
+}
+#header .header-container-content .search ul li{
+    display:inline-block;
+    padding:0 10px;
+    margin:8px 0;
+    border-right:1px solid #ccc;
+    color:#999;
+    font-size:14px;
+}
+#header .header-container-content .search ul li:first-child{
+    padding-left:0;
+}
+#header .header-container-content .search ul li:last-child{
+    border-right:none;
+}
+/******header-container end*******/
