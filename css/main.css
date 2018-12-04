@@ -190,6 +190,7 @@
 	left:0;
 	top:0;
 	opacity:0;
+	transition: opacity .5s;
 }
 #main .main-category-carousel .pic-carousel li a{
 	display:block;
